@@ -17,7 +17,7 @@ body {
 .navbar {
     height : 80px;
     width : 100%;
-    background-color: #954C2E;
+    background-color: var(--dark-color);
     display : flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ body {
 .navbar a,i {
     padding : 10px;
     text-decoration : none;
-    color : #EFE4D2;
+    color : var(--light-color);
     font-size: 20px;
     transition : all 0.5s ease-in-out;
 }
@@ -63,7 +63,7 @@ body {
 .hero-section {
     height : 500px;
     font-size: 35px;
-    color : #954C2E;
+    color : var(--dark-color);
     padding : 20px;
 }
  
@@ -82,7 +82,7 @@ body {
     font-size: 45px;
 }
 .hero-section button {
-   border : 2px solid #954C2E;
+   border : 2px solid var(--dark-color);
    padding : 15px;
    font-size: 20px;
    font-weight : bolder;
