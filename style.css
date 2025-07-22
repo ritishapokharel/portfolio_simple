@@ -1,0 +1,173 @@
+* 
+{
+    margin : 0;
+    padding : 0;
+    box-sizing :border-box;
+}
+
+:root{
+    --light-color : #EFE4D2;
+    --dark-color : #954C2E;
+}
+
+body {
+    background-color: #EFE4D2 ;
+    color : var(--dark-color);
+}
+.navbar {
+    height : 80px;
+    width : 100%;
+    background-color: #954C2E;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.navbar .left a {
+    display : flex;
+    justify-content: flex-start;
+}
+
+.navbar a,i {
+    padding : 10px;
+    text-decoration : none;
+    color : #EFE4D2;
+    font-size: 20px;
+    transition : all 0.5s ease-in-out;
+}
+
+.navbar a:hover
+ {
+    color : #131D4F;
+}
+ 
+.navbar i:hover
+ {
+    color : #131D4F;
+}
+
+
+.container {
+    display : flex;
+    justify-content: space-between;
+    align-items : center;
+}
+
+
+.container img {
+        border-radius : 50%;
+}
+
+.hero-section {
+    height : 500px;
+    font-size: 35px;
+    color : #954C2E;
+    padding : 20px;
+}
+ 
+.hero-section h2 {
+    margin-top : 150px;
+    transition : all 0.5s ease-in-out;
+}
+
+.hero-section h2:hover {
+    font-size: 75px;
+}
+.hero-section p {
+    transition : all 0.5s ease-in-out;
+}
+.hero-section p:hover {
+    font-size: 45px;
+}
+.hero-section button {
+   border : 2px solid #954C2E;
+   padding : 15px;
+   font-size: 20px;
+   font-weight : bolder;
+   background-color: var(--dark-color);
+   color : var(--light-color);
+   border-radius : 8px;
+   margin-top : 5px;
+   transition : all 0.5s ease-in-out;
+}
+
+.hero-section button:hover {
+    background-color: var(--light-color);
+    color : var(--dark-color);
+}
+
+
+.about {
+    color : var(--dark-color);
+    font-size: 25px;
+    font-weight :700;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.about p {
+    transition : all 0.5s ease-in-out;
+}
+
+.about p:hover {
+    font-size: 30px;
+}
+.about-sec h2 {
+    font-size : 45px;
+    text-decoration : underline;
+    transition : all 0.5s ease-in-out;
+}
+
+.about-sec h2:hover {
+    font-size : 75px;
+    text-decoration : underline;
+}
+
+
+
+.about img {
+    border-radius : 50%;
+    margin-right : 30px;
+    margin-top : 30px;
+}
+
+.about p {
+    text-align : flex;
+}
+
+.skills-section h2 {
+    font-size: 45px;
+    text-decoration: underline;
+    transition : all 0.5s ease-in-out;
+    margin-bottom : 20px;
+
+}
+
+.skills-section h2:hover {
+    font-size: 75px;
+}
+.skills-section i {
+    color : var(--dark-color);
+
+}
+.skills-section i:hover {
+    font-size : 33px;
+
+}
+
+
+.icons {
+    display : flex;
+    justify-content : space-between;    
+}
+
+footer {
+   height : 100px;
+    font-size: 18px;
+    border : 2px solid var(--dark-color);
+    display : flex;
+    justify-content : center;
+    align-items : flex-end;
+}
