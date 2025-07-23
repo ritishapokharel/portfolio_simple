@@ -15,6 +15,13 @@ body {
     background-color: #EFE4D2 ;
     color : var(--dark-color);
 }
+
+.space {
+    padding : 70px 20px;
+    margin-top : 40px;
+}
+
+
 .navbar {
     height : 80px;
     width : 100%;
@@ -110,33 +117,53 @@ body {
     align-items : center;
 }
 .about p {
-    font-weight: lighter;
+    font-weight: 500;
 }
 
+h3 {
+    font-size: 25px;
+    text-align : center;
+    
+}
+.projects {
+    display : flex;
+    justify-content : center;
+
+}
+
+.projects button {
+    margin-top: 20px;
+    padding : 10px 50px;
+     margin-right: 40px;
+     font-weight : bolder;
+     color : var(--light-color);
+     border : 2px solid var(--dark-color);
+     border-radius : 10px;
+     background-color: var(--dark-color);
+     transition : all 0.5s ease-in-out;
+}
+
+.projects button:hover {
+    color : var(--dark-color);
+    background-color: var(--light-color);
+}
 
 .about-sec h2 {
     text-align : center;
     font-size : 45px;
-    
+    margin-bottom: 20px;
     transition : all 0.5s ease-in-out;
 }
 
+.about-sec p {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align : left;
+}
 .about-sec h2:hover {
     font-size : 75px;
-   
 }
 
-
-
-.about img {
-    border-radius : 50%;
-    margin-right : 30px;
-    margin-top : 30px;
-}
-
-.about p {
-    text-align : flex;
-}
 
 .skills-section h2 {
     text-align : center;
@@ -147,24 +174,47 @@ body {
 
 }
 
+.icons {
+    display : flex;
+    flex-wrap : wrap;
+    gap : 20px;
+    justify-content : center;
+ 
+}
+
+
+
+
 .skills-section h2:hover {
     font-size: 75px;
 }
 
 .skills-section i {
-    color : var(--dark-color);
-
-}
-.skills-section i:hover {
-    font-size : 33px;
+    color : #e47b51;
 
 }
 
 
-.icons {
-    display : flex;
-    justify-content : space-between;    
+
+
+
+.skills-section button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
+
+.skills-section button:hover {
+    background-color: var(--light-color);
+    color:var(--dark-color);
+}
+
+
 
 /* contact-section */
 .contact-sec {
