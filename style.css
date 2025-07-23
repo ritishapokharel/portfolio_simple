@@ -3,6 +3,7 @@
     margin : 0;
     padding : 0;
     box-sizing :border-box;
+    color : var(--dark-color);
 }
 
 :root{
@@ -89,6 +90,7 @@ body {
    background-color: var(--dark-color);
    color : var(--light-color);
    border-radius : 8px;
+   cursor : pointer;
    margin-top : 5px;
    transition : all 0.5s ease-in-out;
 }
@@ -108,21 +110,20 @@ body {
     align-items : center;
 }
 .about p {
-    transition : all 0.5s ease-in-out;
+    font-weight: lighter;
 }
 
-.about p:hover {
-    font-size: 30px;
-}
+
 .about-sec h2 {
+    text-align : center;
     font-size : 45px;
-    text-decoration : underline;
+    
     transition : all 0.5s ease-in-out;
 }
 
 .about-sec h2:hover {
     font-size : 75px;
-    text-decoration : underline;
+   
 }
 
 
@@ -138,8 +139,9 @@ body {
 }
 
 .skills-section h2 {
+    text-align : center;
     font-size: 45px;
-    text-decoration: underline;
+   
     transition : all 0.5s ease-in-out;
     margin-bottom : 20px;
 
@@ -148,6 +150,7 @@ body {
 .skills-section h2:hover {
     font-size: 75px;
 }
+
 .skills-section i {
     color : var(--dark-color);
 
@@ -162,6 +165,89 @@ body {
     display : flex;
     justify-content : space-between;    
 }
+
+/* contact-section */
+.contact-sec {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-sec h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  transition : all 0.5s ease-in-out;
+}
+.contact-sec h2:hover {
+  font-size: 75px;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+
+
+.contact-container .texts {
+  
+  font-size: 20px;
+  text-align: center;
+}
+
+.form-container {
+  flex: 1 1 45%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form label {
+  font-weight: 600;
+  text-align: left;
+  
+
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  transition: border 0.3s ease;
+margin-bottom: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--dark-color);
+  outline: none;
+}
+
+form button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border: 2px solid var(--dark-color);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--light-color);
+  color : var(--dark-color);
+}
+
 
 footer {
    height : 100px;
